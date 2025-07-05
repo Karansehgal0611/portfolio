@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karan Sehgal - Serving Up Code</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loading-screen">
+        <div class="loading-content">
+            <div class="court-setup">
+                <div class="court-base"></div>
+                <div class="court-lines-setup">
+                    <div class="setup-line setup-line-1"></div>
+                    <div class="setup-line setup-line-2"></div>
+                    <div class="setup-line setup-line-3"></div>
+                </div>
+                <div class="loading-ball"></div>
+            </div>
+            <p class="loading-text">Setting up the court...</p>
+        </div>
+    </div>
+
+    <!-- Header/Navigation -->
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav__logo">
+                <div class="tennis-ball"></div>
+                <span>KS</span>
+            </div>
+            <ul class="nav__menu" id="nav-menu">
+                <li class="nav__item">
+                    <a href="#home" class="nav__link active-link">Home</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#about" class="nav__link">About</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#projects" class="nav__link">Projects</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#skills" class="nav__link">Skills</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#contact" class="nav__link">Contact</a>
+                </li>
+            </ul>
+            <div class="nav__toggle" id="nav-toggle">
+                <div class="hamburger"></div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section class="home section" id="home">
+        <div class="home__container container">
+            <div class="home__content">
+                <h1 class="home__title">
+                    <span class="title-main">Karan Sehgal</span>
+                    <span class="title-sub">Serving Up Code</span>
+                </h1>
+                <p class="home__description">
+                    Computer Science Undergraduate | VIT Vellore
+                </p>
+                <p class="home__subtitle">
+                    Ready to ace every challenge and deliver winning solutions
+                </p>
+                <div class="home__buttons">
+                    <a href="https://drive.google.com/file/d/1GHZS_vrFyKgQ3Yw5kVEchrBjXMw5AIb7/view?usp=sharing" class="btn btn--primary">View My Resume</a>
+                    <a href="#contact" class="btn btn--outline">Let's Rally</a>
+                </div>
+            </div>
+            <div class="home__visual">
+                <div class="tennis-court-3d">
+                    <div class="court-container">
+                        <div class="court-surface">
+                            <!-- Court Base -->
+                            <div class="court-base-3d"></div>
+                            
+                            <!-- Court Lines -->
+                            <div class="court-lines-3d">
+                                <!-- Baseline -->
+                                <div class="court-line-3d baseline-far" data-line="1"></div>
+                                <div class="court-line-3d baseline-near" data-line="2"></div>
+                                
+                                <!-- Service Lines -->
+                                <div class="court-line-3d service-line-far" data-line="3"></div>
+                                <div class="court-line-3d service-line-near" data-line="4"></div>
+                                
+                                <!-- Center Line -->
+                                <div class="court-line-3d center-line" data-line="5"></div>
+                                
+                                <!-- Sidelines -->
+                                <div class="court-line-3d sideline-left" data-line="6"></div>
+                                <div class="court-line-3d sideline-right" data-line="7"></div>
+                                
+                                <!-- Center Service Line -->
+                                <div class="court-line-3d center-service-line" data-line="8"></div>
+                            </div>
+                            
+                            <!-- Tennis Net -->
+                            <div class="tennis-net-3d">
+                                <div class="net-posts">
+                                    <div class="net-post net-post-left"></div>
+                                    <div class="net-post net-post-right"></div>
+                                </div>
+                                <div class="net-mesh"></div>
+                            </div>
+                            
+                            <!-- Tennis Ball -->
+                            <div class="tennis-ball-3d">
+                                <div class="ball-shadow"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section" id="about">
+        <div class="about__container container">
+            <div class="section__header">
+                <h2 class="section__title">About the Player</h2>
+                <p class="section__subtitle">My journey from rookie to rising star</p>
+            </div>
+            <div class="about__content">
+                <div class="about__info">
+                    <div class="about__card">
+                        <div class="card__icon">🎾</div>
+                        <h3 class="card__title">Education</h3>
+                        <p class="card__description">
+                            <strong>B.Tech in Computer Science and Engineering</strong><br>
+                            Vellore Institute of Technology, Vellore<br>
+                            CGPA: 9.23 | Sept 2022 – Present
+                        </p>
+                    </div>
+                    <div class="about__card">
+                        <div class="card__icon">🏆</div>
+                        <h3 class="card__title">Game Stats</h3>
+                        <p class="card__description">
+                            Program Representative (1st Year) — Recognized for academic excellence and leadership. Like a tennis champion, I've maintained consistency and demonstrated leadership on and off the court.
+                        </p>
+                    </div>
+                    <div class="about__card">
+                        <div class="card__icon">💻</div>
+                        <h3 class="card__title">Playing Style</h3>
+                        <p class="card__description">
+                            My approach to coding is like playing tennis - strategic, precise, and always aiming for the ace. I've mastered the fundamentals and now focus on perfecting advanced techniques in AI and machine learning.
+                        </p>
+                    </div>
+                </div>
+                <div class="about__text">
+                    <h3>Tournament Journey</h3>
+                    <p>
+                        Like a tennis player climbing the rankings, I've worked my way up from learning basic programming concepts to tackling complex AI challenges. Each project has been a different match - some requiring power serves (like my SoundSenseHelmet), others needing strategic placement (like my face recognition system).
+                    </p>
+                    <p>
+                        With 450+ problems solved on LeetCode, I've developed the same discipline and practice routine that makes tennis champions. My CGPA of 9.23 reflects the consistency and dedication I bring to every set.
+                    </p>
+                    <div class="achievements">
+                        <div class="achievement">
+                            <span class="achievement__number">450+</span>
+                            <span class="achievement__label">LeetCode Problems</span>
+                        </div>
+                        <div class="achievement">
+                            <span class="achievement__number">9.23</span>
+                            <span class="achievement__label">CGPA</span>
+                        </div>
+                        <div class="achievement">
+                            <span class="achievement__number">3</span>
+                            <span class="achievement__label">Major Projects</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects section" id="projects">
+        <div class="projects__container container">
+            <div class="section__header">
+                <h2 class="section__title">Tournament Matches</h2>
+                <p class="section__subtitle">My winning streak in the tech championships</p>
+            </div>
+            <div class="projects__grid">
+                <div class="project-card">
+                    <div class="project-card__header">
+                        <div class="match-status">Championship Win</div>
+                        <h3 class="project-card__title">SoundSenseHelmet</h3>
+                    </div>
+                    <div class="project-card__content">
+                        <p class="project-card__description">
+                            AI-Powered Assistive Smart Helmet - Designed a smart helmet for the deaf that classifies emergency sounds (sirens, horns) in real-time using 22kHz audio. Integrated haptic feedback, LED alerts, crash detection, and GPS logging with modular testing.
+                        </p>
+                        <div class="project-card__tech">
+                            <span class="tech-tag">Raspberry Pi</span>
+                            <span class="tech-tag">TensorFlow Lite</span>
+                            <span class="tech-tag">C++</span>
+                        </div>
+                    </div>
+                    <div class="project-card__footer">
+                        <a href="https://github.com/Karansehgal0611/SoundSenseHelmet" class="btn btn--sm btn--primary" target="_blank">View on GitHub</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-card__header">
+                        <div class="match-status">Straight Sets</div>
+                        <h3 class="project-card__title">Face Recognition System</h3>
+                    </div>
+                    <div class="project-card__content">
+                        <p class="project-card__description">
+                            Built a face recognition system using Haar cascades and deep learning, achieving 92% accuracy. Deployed with Flask to enable sub-second real-time authentication in browsers.
+                        </p>
+                        <div class="project-card__tech">
+                            <span class="tech-tag">OpenCV</span>
+                            <span class="tech-tag">TensorFlow</span>
+                            <span class="tech-tag">Flask</span>
+                        </div>
+                    </div>
+                    <div class="project-card__footer">
+                        <a href="https://github.com/Karansehgal0611/FaceRecogniton" class="btn btn--sm btn--primary" target="_blank">View on GitHub</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-card__header">
+                        <div class="match-status">Tournament Victory</div>
+                        <h3 class="project-card__title">Math Based LLM</h3>
+                    </div>
+                    <div class="project-card__content">
+                        <p class="project-card__description">
+                            Fine-tuned a transformer model on 50K+ math problems; achieved 88% algebra expression accuracy. Developed a web interface for live query solving with responses under 2 seconds.
+                        </p>
+                        <div class="project-card__tech">
+                            <span class="tech-tag">Transformers</span>
+                            <span class="tech-tag">Hugging Face</span>
+                            <span class="tech-tag">PyTorch</span>
+                        </div>
+                    </div>
+                    <div class="project-card__footer">
+                        <a href="https://github.com/Karansehgal0611/MathLLM" class="btn btn--sm btn--primary" target="_blank">View on GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills section" id="skills">
+        <div class="skills__container container">
+            <div class="section__header">
+                <h2 class="section__title">Player Statistics</h2>
+                <p class="section__subtitle">Technical skills breakdown and performance metrics</p>
+            </div>
+            <div class="skills__content">
+                <div class="skills__category">
+                    <h3 class="skills__category-title">Programming Languages</h3>
+                    <div class="skills__grid">
+                        <div class="skill-item">
+                            <div class="skill-item__header">
+                                <span class="skill-item__name">C/C++</span>
+                                <span class="skill-item__level">Expert</span>
+                            </div>
+                            <div class="skill-item__bar">
+                                <div class="skill-item__progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-item__header">
+                                <span class="skill-item__name">Python</span>
+                                <span class="skill-item__level">Expert</span>
+                            </div>
+                            <div class="skill-item__bar">
+                                <div class="skill-item__progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-item__header">
+                                <span class="skill-item__name">Java</span>
+                                <span class="skill-item__level">Advanced</span>
+                            </div>
+                            <div class="skill-item__bar">
+                                <div class="skill-item__progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-item__header">
+                                <span class="skill-item__name">R</span>
+                                <span class="skill-item__level">Intermediate</span>
+                            </div>
+                            <div class="skill-item__bar">
+                                <div class="skill-item__progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills__category">
+                    <h3 class="skills__category-title">Frameworks & Libraries</h3>
+                    <div class="skills__tags">
+                        <span class="skill-tag">Scikit-learn</span>
+                        <span class="skill-tag">TensorFlow</span>
+                        <span class="skill-tag">Keras</span>
+                        <span class="skill-tag">OpenCV</span>
+                        <span class="skill-tag">Pandas</span>
+                        <span class="skill-tag">NumPy</span>
+                        <span class="skill-tag">Matplotlib</span>
+                        <span class="skill-tag">Seaborn</span>
+                        <span class="skill-tag">PyTorch</span>
+                    </div>
+                </div>
+
+                <div class="skills__category">
+                    <h3 class="skills__category-title">Frontend & Backend</h3>
+                    <div class="skills__tags">
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Flask</span>
+                    </div>
+                </div>
+
+                <div class="skills__category">
+                    <h3 class="skills__category-title">Tools & Platforms</h3>
+                    <div class="skills__tags">
+                        <span class="skill-tag">Google Cloud</span>
+                        <span class="skill-tag">Linux</span>
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">StarUML</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section" id="contact">
+        <div class="contact__container container">
+            <div class="section__header">
+                <h2 class="section__title">Let's Rally</h2>
+                <p class="section__subtitle">Ready to serve up some collaboration</p>
+            </div>
+            <div class="contact__content">
+                <div class="contact__info">
+                    <div class="contact__card">
+                        <div class="contact__icon">📧</div>
+                        <h3 class="contact__title">Email</h3>
+                        <p class="contact__description">karansehgal0310@gmail.com</p>
+                    </div>
+                    <div class="contact__card">
+                        <div class="contact__icon">📱</div>
+                        <h3 class="contact__title">Phone</h3>
+                        <p class="contact__description">+91 8826236504</p>
+                    </div>
+                    <div class="contact__card">
+                        <div class="contact__icon">💼</div>
+                        <h3 class="contact__title">LinkedIn</h3>
+                        <a href="https://www.linkedin.com/in/karan-sehgal-78b16429a/">Connect with me</a>
+                    </div>
+                    <div class="contact__card">
+                        <div class="contact__icon">🔗</div>
+                        <h3 class="contact__title">GitHub</h3>
+                        <a href="https://github.com/Karansehgal0611" target="_blank">Check out my code</a>
+                    </div>
+                </div>
+                <div class="contact__form">
+                    <h3 class="form__title">Serve Up a Message</h3>
+                    <form class="form" id="contact-form">
+                        <div class="form__group">
+                            <input type="text" class="form__input" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form__group">
+                            <input type="email" class="form__input" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form__group">
+                            <textarea class="form__input" name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn--primary btn--full-width">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__container container">
+            <div class="footer__content">
+                <div class="footer__logo">
+                    <div class="tennis-ball"></div>
+                    <span>Karan Sehgal</span>
+                </div>
+                <p class="footer__description">
+                    Serving up innovative solutions, one line of code at a time.
+                </p>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2024 Karan Sehgal. All rights reserved.</p>
+                <div class="footer__links">
+                    <a href="https://github.com/Karansehgal0611" target="_blank">GitHub</a>
+                    <a href="https://www.linkedin.com/in/karan-sehgal-78b16429a/" target="_blank">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

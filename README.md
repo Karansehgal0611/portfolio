@@ -65,8 +65,7 @@ This portfolio transforms a CS student's journey into an engaging, tennis-themed
 
 
 ## Live Demo
-
-> Replace this with your deployed URL after publishing on GitHub Pages.
+https://karansehgal0611.github.io/portfolio/
 
 ## Getting Started
 
